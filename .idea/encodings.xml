@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/steganography/task2/container_task2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/decoded1.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/decoded_output.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/decoded_task2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/encoded1.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/encoded_output.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/encoded_task2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/information_to_hide_task2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task2/output.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task3/container_task3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task3/decoded_task3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task3/encoded_task3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task3/information_to_hide_task3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task4/container_task4.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task4/decoded_task4.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task4/encoded_task4.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/steganography/task4/information_to_hide_task4.txt" charset="windows-1251" />
+  </component>
+</project>

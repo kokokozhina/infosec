@@ -5,8 +5,10 @@ uppercase_letter = False
 action = input("Введите 1, чтобы зашифровать, 0, чтобы расшифровать: ")
 if action == '1':
     print("Шифрование!")
-    key = input("Пожалуйста, введите ключ шифрования: ").lower()
-    text = input("Пожалуйста, введите текст для шифрования: ")
+    key = input("Пожалуйста, введите ключ шифрования: ").lower()\
+        .strip(' \0\1\2\3\4\5\6\a\b\t\n\v\f\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
+    text = input("Пожалуйста, введите текст для шифрования: ")\
+        .strip(' \0\1\2\3\4\5\6\a\b\t\n\v\f\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
     letter_in_key = key[index]
 
     encrypted_text = ""
@@ -29,8 +31,10 @@ if action == '1':
 
 elif action == '0':
     print("Дешифрование!")
-    key = input("Пожалуйста, введите ключ шифрования: ").lower()
-    text = input("Пожалуйста, введите текст для дешифрования: ")
+    key = input("Пожалуйста, введите ключ шифрования: ").lower()\
+        .strip(' \0\1\2\3\4\5\6\a\b\t\n\v\f\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
+    text = input("Пожалуйста, введите текст для дешифрования: ")\
+        .strip(' \0\1\2\3\4\5\6\a\b\t\n\v\f\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
     letter_in_key = key[index]
 
     decrypted_text = ""
@@ -55,3 +59,5 @@ elif action == '0':
 
 else:
     print("Извините, непонятный символ. Давайте повторим заново.")
+
+input("Нажмите Enter, чтобы завершить... ")

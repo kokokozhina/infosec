@@ -44,10 +44,11 @@ def write_arr(output, num, paths, files):
         output.write(files[i])
 
 
-def encrypt_folder(path):
+def encrypt_folder(path, folder_to_save):
     files = []
     paths = []
-    encrypted = open('encrypted_archive_task6.txt', 'w', encoding='utf-8')
+    path_to_save = folder_to_save + os.sep + 'encrypted_archive_task6.txt'
+    encrypted = open(path_to_save, 'w', encoding='utf-8')
     encrypt(path, key, files, paths)
     number_of_files = len(files)
     encrypted.write(vigenere(str(number_of_files).zfill(8).encode("utf-8"), key, True))
@@ -76,11 +77,18 @@ action = input("Введите 1, чтобы зашифровать, 0, чтоб
 key = input("Пожалуйста, введите ключ шифрования: ")
 if action == "1":
     folder = input("Пожалуйста, введите полный путь к каталогу для его шифрования: ")
-    encrypt_folder(folder)
+    folder_to_save = input("Пожалуйста, введите полный путь к каталогу, куда сохранить "
+                           "зашифрованный файл с названием encrypted_archive_task6.txt: ")
+    encrypt_folder(folder, folder_to_save)
     shutil.rmtree(folder)
+    print("Шифрование закончено!")
 elif action == "0":
     path = input("Пожалуйста, введите полный путь к файлу для его дешифрования: ")
     decrypt_file(path, key)
     os.remove(path)
+    print("Дешифрование закончено!")
 else:
     print("Извините, непонятный символ. Давайте повторим заново.")
+
+input("Нажмите Enter, чтобы завершить... ")
+
